@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Family</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f6f8;
+    color: #222;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #173b2b, #286044);
+    color: white;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #d9b45b;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #d9b45b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #173b2b;
+    font-weight: bold;
+}
+
+/* NAVIGATION */
+nav {
+    background: white;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    overflow-x: auto;
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 8px;
+    white-space: nowrap;
+}
+
+nav button:hover,
+nav button.active {
+    background: #173b2b;
+    color: white;
+}
+
+/* MAIN */
+.container {
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* WELCOME */
+.welcome {
+    background: linear-gradient(135deg, #173
